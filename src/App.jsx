@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import FormComponent from './components/FormComponent'
 import './App.css'
 
 function App() {
@@ -6,7 +7,10 @@ function App() {
 
   return (
     <>
-      <h1>formulario simple</h1>
+      <main className='container my-5'> 
+    <h1>Formulario</h1>
+    <FormComponent></FormComponent>
+      </main>
        
     </>
   )
