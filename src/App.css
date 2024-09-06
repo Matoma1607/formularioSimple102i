@@ -15,6 +15,6 @@ h1 {
 }
 
 .form-control {
-  min-height: 40px; /* Altura mínima */
-  max-height: 60px; /* Altura máxima */
+  min-height: 40px; 
+  max-height: 60px; 
 }

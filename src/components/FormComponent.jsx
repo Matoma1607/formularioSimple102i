@@ -21,28 +21,24 @@ const FormComponent = () => {
     const dniRegex = /^[0-9]+$/;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    // Validaciones para el nombre
     if (!formData.nombre) {
       newErrors.nombre = "El nombre es requerido";
     } else if (formData.nombre.length < 3 || formData.nombre.length > 20) {
       newErrors.nombre = "El nombre debe tener entre 3 y 20 caracteres";
     }
 
-    // Validaciones para el apellido
     if (!formData.apellido) {
       newErrors.apellido = "El apellido es requerido";
     } else if (formData.apellido.length < 3 || formData.apellido.length > 20) {
       newErrors.apellido = "El apellido debe tener entre 3 y 20 caracteres";
     }
 
-    // Validaciones para el DNI
     if (!formData.dni) {
       newErrors.dni = "El DNI es requerido";
     } else if (!dniRegex.test(formData.dni) || formData.dni.length !== 8) {
       newErrors.dni = "El DNI debe tener 8 números";
     }
 
-    // Validaciones para el email
     if (!formData.email) {
       newErrors.email = "El email es requerido";
     } else if (!emailRegex.test(formData.email)) {
