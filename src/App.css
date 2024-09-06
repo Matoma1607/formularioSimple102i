@@ -1,10 +1,20 @@
-body{
-    background-color: #35689c;
+body {
+  background-color: #35689c;
 }
 
-h1{
-    background-color: #4eabb9;
-    color: #fff;
-    padding: 10px;
-    text-align: center
+h1 {
+  background-color: #4eabb9;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.form-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-control {
+  min-height: 40px; /* Altura mínima */
+  max-height: 60px; /* Altura máxima */
 }
