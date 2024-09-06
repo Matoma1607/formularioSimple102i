@@ -1,8 +1,25 @@
-# React + Vite
+# React Bootstrap Formulario
+Este es un proyecto de ejemplo que utiliza **React** y **React Bootstrap** para crear un formulario interactivo con validaciones integradas.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción
+La aplicación consiste en un formulario que incluye los siguientes campos:
+- Nombre
+- Apellido
+- DNI
+- Email
 
-Currently, two official plugins are available:
+El formulario valida que todos los campos sean completados correctamente antes de enviar los datos. Las validaciones incluyen:
+- Nombre y Apellido deben tener entre 3 y 20 caracteres.
+- DNI debe contener exactamente 8 dígitos numéricos.
+- El email debe tener un formato válido.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Si alguno de los campos es incorrecto o está incompleto, se mostrará un mensaje de error específico.
+
+## Tecnologías Utilizadas
+- **React**
+- **React Bootstrap**
+- **Vite** (para la creación del proyecto)
+- **CSS** (Estilos personalizados en `App.css`)
+
+## Autor
+Matias Nicolas Salazar
